@@ -7,8 +7,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/white"
         android:orientation="vertical"
+        style="@style/SettingsBackground"
         >
 
         <LinearLayout
@@ -17,7 +17,6 @@
             android:layout_height="@dimen/height_56"
             app:layout_constraintTop_toTopOf="parent"
             tools:layout_editor_absoluteX="1dp"
-            android:background="@color/white"
             android:orientation="horizontal"
             >
             <Button
@@ -25,38 +24,23 @@
                 android:layout_width="@dimen/height_56"
                 android:layout_height="@dimen/height_56"
                 app:icon="@drawable/arrow_back"
-                app:iconTint="@color/black"
-                android:backgroundTint="@color/white"
+                style="@style/SettingsBackground.Button"
                 />
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="@dimen/height_56"
-                android:paddingStart="@dimen/padding_12"
-                android:paddingEnd="@dimen/padding_12"
-                android:paddingTop="@dimen/padding_top_10"
                 android:text="@string/settings"
-                android:textColor="@color/black"
-                android:textFontWeight="@integer/font_weight"
-                android:textSize="@dimen/text_size_22"/>
+                style="@style/SettingsTextViewStyle"
+                />
         </LinearLayout>
 
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="@dimen/height_61"
             android:layout_marginTop="@dimen/size_24"
-            android:background="@color/white"
             >
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="@dimen/height_56"
-                android:paddingStart="@dimen/padding_12"
-                android:paddingEnd="@dimen/padding_12"
-                android:paddingTop="10dp"
                 android:text="@string/dark_theme"
-                android:textColor="@color/black"
-                android:textFontWeight="@integer/font_weight"
-                android:textSize="@dimen/text_size_22"/>
+                style="@style/SettingsTextViewStyle"/>
 
             <Switch
                 android:layout_width="match_parent"
@@ -69,54 +53,28 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="@dimen/height_61"
-            android:background="@color/white"
             android:orientation="horizontal"
             >
             <TextView
-                android:layout_width="0dp"
-                android:layout_weight="10"
-                android:layout_height="match_parent"
-                android:paddingStart="@dimen/padding_12"
-                android:paddingEnd="@dimen/padding_12"
-                android:paddingTop="10dp"
                 android:text="@string/share_app"
-                android:textColor="@color/black"
-                android:textFontWeight="@integer/font_weight"
-                android:textSize="@dimen/text_size_22"/>
+                style="@style/SettingsTextViewStyle" />
 
             <ImageView
-                android:layout_width="@dimen/size_24"
-                android:layout_height="@dimen/size_24"
-                android:layout_marginEnd="@dimen/right_icon_margin"
-                android:layout_marginTop="@dimen/right_icon_margin"
-                android:layout_marginStart="@dimen/right_icon_margin"
+                style="@style/SettingsImageStyle"
                 android:src="@drawable/share"
                 />
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="@dimen/height_61"
-            android:background="@color/white"
             android:orientation="horizontal"
             >
             <TextView
-                android:layout_width="0dp"
-                android:layout_weight="10"
-                android:layout_height="match_parent"
-                android:paddingStart="@dimen/padding_12"
-                android:paddingEnd="@dimen/padding_12"
-                android:paddingTop="10dp"
                 android:text="@string/contact_support"
-                android:textColor="@color/black"
-                android:textFontWeight="@integer/font_weight"
-                android:textSize="@dimen/text_size_22"/>
+                style="@style/SettingsTextViewStyle"/>
 
             <ImageView
-                android:layout_width="@dimen/size_24"
-                android:layout_height="@dimen/size_24"
-                android:layout_marginEnd="@dimen/right_icon_margin"
-                android:layout_marginTop="@dimen/right_icon_margin"
-                android:layout_marginStart="@dimen/right_icon_margin"
+                style="@style/SettingsImageStyle"
                 android:src="@drawable/support"
                 />
         </LinearLayout>
@@ -124,29 +82,16 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="@dimen/height_61"
-            android:background="@color/white"
             android:orientation="horizontal"
             >
             <TextView
-                android:layout_width="0dp"
-                android:layout_weight="10"
-                android:layout_height="match_parent"
-                android:paddingStart="@dimen/padding_12"
-                android:paddingEnd="@dimen/padding_12"
-                android:paddingTop="10dp"
                 android:text="@string/user_agreement"
-                android:textColor="@color/black"
-                android:textFontWeight="@integer/font_weight"
-                android:textSize="@dimen/text_size_22"/>
+                style="@style/SettingsTextViewStyle"
+                />
 
             <ImageView
-                android:layout_width="@dimen/size_24"
-                android:layout_height="@dimen/size_24"
-                android:layout_marginEnd="@dimen/right_icon_margin"
-                android:layout_marginTop="@dimen/right_icon_margin"
-                android:layout_marginStart="@dimen/right_icon_margin"
-                android:src="@drawable/arrow_forward"
-                />
+                style="@style/SettingsImageStyle"
+                android:src="@drawable/arrow_forward"/>
         </LinearLayout>
 
     </LinearLayout>
