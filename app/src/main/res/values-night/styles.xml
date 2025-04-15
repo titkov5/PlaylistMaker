@@ -4,7 +4,7 @@
         <item name="android:background">@color/black</item>
     </style>
 
-    <style name="SettingsBackground">
+    <style name="SecondaryBackground">
         <item name="android:background">@color/black</item>
     </style>
 
@@ -14,7 +14,7 @@
     </style>
 
     <style name="SettingsTextViewStyle">
-        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">@dimen/height_56</item>
         <item name="android:paddingStart">@dimen/padding_12</item>
         <item name="android:paddingEnd">@dimen/padding_12</item>
@@ -24,5 +24,13 @@
         <item name="android:textSize">@dimen/text_size_16</item>
         <item name="android:fontFamily">@font/ys_display_regular</item>
     </style>
+    <style name="TextEditStyle">
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:textColorHint">@color/black</item>
+        <item name="android:drawableTint">@color/black</item>
+    </style>
 
+    <style name="ClearButtonStyle">
+        <item name="android:tint">@color/black</item>
+    </style>
 </resources>

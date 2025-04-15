@@ -8,7 +8,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        style="@style/SettingsBackground"
+        style="@style/SecondaryBackground"
         >
 
         <LinearLayout
@@ -42,58 +42,52 @@
                 android:text="@string/dark_theme"
                 style="@style/SettingsTextViewStyle"/>
 
-            <Switch
+            <androidx.appcompat.widget.SwitchCompat
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginEnd="@dimen/right_icon_margin"
                 >
-            </Switch>
+            </androidx.appcompat.widget.SwitchCompat>
         </FrameLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="@dimen/height_61"
             android:orientation="horizontal"
+            android:id="@+id/shareApp"
             >
             <TextView
                 android:text="@string/share_app"
-                style="@style/SettingsTextViewStyle" />
-
-            <ImageView
-                style="@style/SettingsImageStyle"
-                android:src="@drawable/share"
+                style="@style/SettingsTextViewStyle"
+                app:drawableEndCompat="@drawable/share"
                 />
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="@dimen/height_61"
             android:orientation="horizontal"
+            android:id="@+id/contactSupport"
             >
             <TextView
                 android:text="@string/contact_support"
-                style="@style/SettingsTextViewStyle"/>
-
-            <ImageView
-                style="@style/SettingsImageStyle"
-                android:src="@drawable/support"
+                style="@style/SettingsTextViewStyle"
+                app:drawableEndCompat="@drawable/support"
                 />
+
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="@dimen/height_61"
             android:orientation="horizontal"
+            android:id="@+id/userAgreement"
             >
             <TextView
                 android:text="@string/user_agreement"
                 style="@style/SettingsTextViewStyle"
+                app:drawableEndCompat="@drawable/arrow_forward"
                 />
-
-            <ImageView
-                style="@style/SettingsImageStyle"
-                android:src="@drawable/arrow_forward"/>
         </LinearLayout>
-
     </LinearLayout>
 
 

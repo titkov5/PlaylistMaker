@@ -4,9 +4,11 @@
     <dimen name="text_size_16">22sp</dimen>
     <dimen name="first_for_other">8dp</dimen>
     <dimen name="padding_16">16dp</dimen>
+    <dimen name="padding_8">8dp</dimen>
     <dimen name="padding_12">12dp</dimen>
     <dimen name="right_icon_margin">18dp</dimen>
     <dimen name="height_56">56dp</dimen>
+    <dimen name="height_52">56dp</dimen>
     <dimen name="height_61">61dp</dimen>
     <dimen name="padding_top_10">10dp</dimen>
     <dimen name="size_24">24dp</dimen>

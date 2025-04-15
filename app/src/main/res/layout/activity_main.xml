@@ -52,7 +52,6 @@
             app:icon="@drawable/settings"
             android:text="@string/settings"
             />
-
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

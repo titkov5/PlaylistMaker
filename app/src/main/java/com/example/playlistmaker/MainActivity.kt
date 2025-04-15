@@ -5,8 +5,6 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,6 +15,12 @@ class MainActivity : AppCompatActivity() {
         settingsButton.setOnClickListener {
             val displayIntent = Intent(this, SettingsActivity::class.java)
             startActivity(displayIntent)
+        }
+
+        val searchButton = findViewById<Button>(R.id.search_button)
+        searchButton.setOnClickListener {
+            val displaySearchIntent = Intent(this, SearchActivity::class.java)
+            startActivity(displaySearchIntent)
         }
     }
 }
