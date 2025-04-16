@@ -3,31 +3,30 @@ package com.example.playlistmaker
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
-import android.widget.Button
-import android.widget.LinearLayout
-import androidx.activity.enableEdgeToEdge
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.appbar.MaterialToolbar
 
 
 class SettingsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContentView(R.layout.activity_settings)
-        val backButton = findViewById<Button>(R.id.back_button)
-        backButton.setOnClickListener {
+
+        val toolbar = findViewById<MaterialToolbar>(R.id.toolbar)
+        toolbar.setNavigationOnClickListener {
             val displayIntent = Intent(this, MainActivity::class.java)
             startActivity(displayIntent)
         }
 
-        val agreement = findViewById<LinearLayout>(R.id.userAgreement)
+        val agreement = findViewById<TextView>(R.id.userAgreement)
         agreement.setOnClickListener {
             val uri = Uri.parse(getString(R.string.offerString))
             val intent = Intent(Intent.ACTION_VIEW, uri)
             startActivity(intent)
         }
 
-        val share = findViewById<LinearLayout>(R.id.shareApp)
+        val share = findViewById<TextView>(R.id.shareApp)
         share.setOnClickListener {
             val sendIntent: Intent = Intent().apply {
                 action = Intent.ACTION_SEND
@@ -38,7 +37,7 @@ class SettingsActivity : AppCompatActivity() {
             startActivity(shareIntent)
         }
 
-        val contactSupport = findViewById<LinearLayout>(R.id.contactSupport)
+        val contactSupport = findViewById<TextView>(R.id.contactSupport)
         contactSupport.setOnClickListener {
             val message = getString(R.string.thanksAll)
             val subject = getString(R.string.messageToAll)

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <integer name="font_weight">500</integer>
+    <integer name="font_weight_medium">500</integer>
+    <integer name="font_weight_regular">400</integer>
     <integer name="button_weight">3</integer>
 </resources>
