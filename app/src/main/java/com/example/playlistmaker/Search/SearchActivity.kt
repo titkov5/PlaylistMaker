@@ -1,4 +1,4 @@
-package com.example.playlistmaker
+package com.example.playlistmaker.Search
 
 import android.app.Activity
 import android.content.Intent
@@ -10,6 +10,8 @@ import android.widget.EditText
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.isVisible
+import com.example.playlistmaker.MainActivity
+import com.example.playlistmaker.R
 import com.google.android.material.appbar.MaterialToolbar
 
 class SearchActivity : AppCompatActivity() {
